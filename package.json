@@ -1,0 +1,28 @@
+{
+  "name": "using-fastify",
+  "version": "1.0.0",
+  "description": "For practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xeron07/using-fastify.git"
+  },
+  "author": "Md. Minhaz uddin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xeron07/using-fastify/issues"
+  },
+  "homepage": "https://github.com/Xeron07/using-fastify#readme",
+  "dependencies": {
+    "fastify": "^3.9.2",
+    "fastify-pg": "^0.1.10",
+    "fastify-plugin": "^3.0.0",
+    "fastify-postgres": "^3.3.0",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {}
+}
