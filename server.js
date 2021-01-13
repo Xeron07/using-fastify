@@ -2,18 +2,18 @@ const app=require("fastify")({logger:true});
 const pg = require('fastify-pg');
 //db options
 const options={
-    connectionString: 'postgres://postgres@localhost/postgres'
+    connectionString: 'postgres://root:root@localhost:5432/postgres'
 };
 
 app.register(pg, options);
+
+
 
 app.get("/",(req,res)=>{
     res.send("Hello World");
 });
 
-app.get("/user",(req,res)=>{
-    res.send("user added");
-})
+app.register(require("./routes/users"));
 
 
 const startServer=async()=>{
